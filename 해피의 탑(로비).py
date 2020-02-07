@@ -1,5 +1,7 @@
 import discord
 import asyncio
+import os
+token=os.environ["TOKEN"]
 
 client = discord.Client()
 
@@ -65,4 +67,5 @@ async def my_background_task():
         await asyncio.sleep(10)
 client.loop.create_task(my_background_task())
 
-client.run('NjczMzU1ODMwNDI2NDY4Mzgz.XjtuWg.vs5WFM_cDPCtxzLH4brQ0FGumoI')
+client.run(token)
+os.execv(sys.executable, ['python']+sys.argv)
