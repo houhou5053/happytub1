@@ -1,1 +1,1 @@
-worker: python 해피의 탑(로비).py
+worker: python happytub1.py
